@@ -2,7 +2,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, unique: true|
+|name|string|null: false, unique: true, index: true|
 |email|varchar(255)|null: false, unique: true|
 |password|varchar(255)|null: false|
 
@@ -16,7 +16,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: :members
