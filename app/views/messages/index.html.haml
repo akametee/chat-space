@@ -1,0 +1,150 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ReviewSpace
+    %link{:href => "application.scss", :rel => "stylesheet"}/
+  %body
+    .status
+      チャットグループが作成されました。
+    .chat-side
+      .chat-side__user
+        .chat-side__user-info
+          .chat-side__user-info-name
+            akamet
+          .chat-side__user--icons
+            %a.chat-side__user--new-group{:href => ""}
+              %i.fa.fa-pencil-square-o
+            %a.chat-side__user--edit-group{:href => ""}
+              %i.fa.fa-cog
+      .chat-side__chatgroups
+        .chat-side__chatgroups-list
+          %a{:href => ""}
+            .chat-side__chatgroup
+              .chat-side__chatgroup-name
+                赤メットのチャット
+              .chat-side__chatgroup-message
+                まだメッセージはありません
+          %a{:href => ""}
+            .chat-side__chatgroup
+              .chat-side__chatgroup-name
+                メットたちの部屋
+              .chat-side__chatgroup-message
+                テストメッセージ
+    .chat-main
+      .chat-main__header
+        .chat-main__header-content
+          .chat-main__header-content-name
+            メットたちの部屋
+          %a.chat-main__header-content-edit-btn{:href => ""} edit
+        .chat-main__header-members
+          MEMBER:
+          %i akamet
+      .chat-main__body
+        .chat-main__body--messages-list
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+          .chat-main__message
+            .chat-main__message-name
+              akamet
+            .chat-main__message-createtime
+              2019/01/01 00:00:00
+            .chat-main__message-description
+              テストメッセージ
+      .chat-main__footer
+        %form.chat-main__footer-form
+          .chat-main__footer-body
+            %input.description{:placeholder => "type a message", :type => "text"}/
+            %label.chat-imgfile
+              %input.image{:type => "file"}/
+              %i.fa.fa-image
+            %input.submit{:type => "submit", :value => "Send"}/
