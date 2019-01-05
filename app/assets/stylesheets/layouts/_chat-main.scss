@@ -1,0 +1,110 @@
+.chat-main {
+  width: $mainwidth;
+  background-color: $white;
+  float: right;
+  &__header {
+    width: $mainwidth;
+    height: $headerheight;
+    background-color: $white;
+    border: solid 1px;
+    border-style: none none solid none;
+    border-bottom-color: #eeeeee;
+    padding: 0 40px;
+    position: fixed;
+    top: 20px;
+    left:300px;
+    &-content {
+      width: 100%;
+      @include clearfix;
+      &-name {
+        font-size: 20px;
+        color: $darkgrey;
+        padding: 35px 0 0 0;
+        float: left;
+      }
+      &-edit-btn {
+        margin: 28px 0 auto;
+        padding: 12px 20px;
+        border: solid 1px $lightblue;
+        font-size: 16px;
+        color: $lightblue;
+        text-decoration: none;
+        float: right;
+      }
+    }
+    &-members {
+      font-size: 12px;
+      color: $lightgrey;
+      float: left;
+    }
+  }
+  &__body {
+    height: $bodyheight;
+    background-color: $white;
+    padding: 46px 40px 0 40px;
+    &--messages-list {
+    }
+  }
+  &__message {
+    padding-bottom: 40px;
+    &-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: $lightblack;
+      float:left;
+    }
+    &-createtime {
+      font-size: 12px;
+      color: $lightgrey;
+      padding-left: 10px;
+      float:left;
+    }
+    &-description {
+      font-size: 14px;
+      padding-top: 10px;
+      color: $lightblack;
+      clear: both;
+    }
+  }
+  &__footer {
+    width: $footerwidth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left:300px;
+    &-form {
+      padding: 20px 40px;
+      width: 100%;
+      background-color: $pearlgrey;
+    }
+    &-body {
+      @include clearfix;
+    }
+    .description {
+      width: calc(100% - 170px);
+      height: 50px;
+      position: relative;
+      display: inline-block;
+    }
+    .chat-imgfile{
+      color: $white;
+      margin: 0 15px;
+      position: relative;
+      display: inline-block;
+    }
+    .image {
+      display: none;
+    }
+    .submit {
+      width: 100px;
+      height: 50px;
+      font-size: 16px;
+      color: $white;
+      background-color: $lightblue;
+      position: relative;
+      display: inline-block;
+      }
+  }
+}
