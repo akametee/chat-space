@@ -4,7 +4,7 @@
   float: left;
   background-color: $navy;
   position: fixed;
-  top: 20px;
+  top: 0px;
   left: 0px;
   &__user{
     height: $headerheight;
@@ -25,12 +25,13 @@
     &--icons{
       float: right;
     }
-    &--new-group {
-      color: $white;
-      margin-right: 2px;
+    &--new-group
+    {
+      display: inline-block;
     }
-    &--edit-group {
-      color: $white;
+    &--edit-group
+    {
+      display: inline-block;
     }
   }
   &__chatgroups {
@@ -52,4 +53,10 @@
         padding: 5px 0 40px 0;
       }
   }
+}
+
+.icon {
+  color: $white;
+  text-decoration: none;
+  margin: 0 1px;
 }
