@@ -5,32 +5,8 @@
     %title ReviewSpace
     %link{:href => "application.scss", :rel => "stylesheet"}/
   %body
-    .status
-      チャットグループが作成されました。
     .chat-side
-      .chat-side__user
-        .chat-side__user-info
-          .chat-side__user-info-name
-            akamet
-          .chat-side__user--icons
-            %a.chat-side__user--new-group{:href => ""}
-              %i.fa.fa-pencil-square-o
-            %a.chat-side__user--edit-group{:href => ""}
-              %i.fa.fa-cog
-      .chat-side__chatgroups
-        .chat-side__chatgroups-list
-          %a{:href => ""}
-            .chat-side__chatgroup
-              .chat-side__chatgroup-name
-                赤メットのチャット
-              .chat-side__chatgroup-message
-                まだメッセージはありません
-          %a{:href => ""}
-            .chat-side__chatgroup
-              .chat-side__chatgroup-name
-                メットたちの部屋
-              .chat-side__chatgroup-message
-                テストメッセージ
+      = render "./shared/side-bar"
     .chat-main
       .chat-main__header
         .chat-main__header-content
