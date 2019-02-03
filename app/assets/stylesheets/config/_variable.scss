@@ -1,16 +1,18 @@
 $white: #FFFFFF;
-$lightblue: #38AEF0;
-$navy: #2F3E51;
-$darknavy: #253141;
-$darkgrey: #333333;
-$lightgrey: #999999;
-$pearlgrey: #AAAAAA;
-$lightblack: #434A54;
-$orange: #F35500;
+$side_blue_dark: #253141;
+$side_blue_light: #2f3e51;
+$light_blue: #38AEF0;
+$light_gray: #999999;
+$black: #434a54;
+$alert_orange: #F35500;
 
 $sidewidth: 300px;
+$headerheight: 110px;
 $mainwidth : calc(100% - 300px - 80px);
 $footerwidth : calc(100% - 300px);
-$headerheight: 110px;
 $bodyheight: calc(100% - 250px);
 $footerheight: 90px;
+
+$side_header_font: 16px;
+$side_group_name: 15px;
+$side_group_message: 11px;
